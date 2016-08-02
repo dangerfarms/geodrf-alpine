@@ -20,4 +20,4 @@ RUN apk add --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/
 RUN ln -s /usr/lib/libgeos_c.so.1 /usr/lib/libgeos_c.so
 RUN ln -s /usr/lib/libgdal.20.so /usr/lib/libgdal.so
 RUN pip install --upgrade pip
-RUN pip install django djangorestframework
+RUN pip install django==1.10 djangorestframework
