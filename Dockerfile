@@ -4,7 +4,6 @@ ENV CFLAGS="$CFLAGS -L/lib"
 RUN apk add --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
 	bash \
 	binutils \
-	curl \
 	gcc \
 	gdal \
 	geos \
