@@ -19,5 +19,5 @@ RUN apk add --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/
     zlib-dev && \
 	rm -rf /var/cache/apk/*
 RUN ln -s /usr/lib/libgeos_c.so.1 /usr/local/lib/libgeos_c.so
-RUN ln -s /usr/lib/libgdal.20.so /usr/local/lib/libgdal.so
+RUN ln -s /usr/lib/libgdal.so.20.1.0 /usr/local/lib/libgdal.so
 RUN pip install --upgrade pip
