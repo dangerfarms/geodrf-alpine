@@ -18,6 +18,6 @@ RUN apk add --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/
 	postgresql-dev \
     zlib-dev && \
 	rm -rf /var/cache/apk/*
-RUN ln -s /usr/lib/libgeos_c.so.1 /usr/lib/libgeos_c.so
-RUN ln -s /usr/lib/libgdal.20.so /usr/lib/libgdal.so
+RUN ln -s /usr/lib/libgeos_c.so.1 /usr/local/lib/libgeos_c.so
+RUN ln -s /usr/lib/libgdal.20.so /usr/local/lib/libgdal.so
 RUN pip install --upgrade pip
