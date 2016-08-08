@@ -2,21 +2,22 @@
 FROM python:3-alpine
 ENV CFLAGS="$CFLAGS -L/lib"
 RUN apk add --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
-	bash \
-	binutils \
-	gcc \
-	gdal \
-	geos \
-	git \
-	jpeg-dev \
+    bash \
+    binutils \
+    gcc \
+    gdal \
+    geos \
+    git \
+    jpeg-dev \
     libffi-dev \
     libpq \
-	linux-headers \
-	musl-dev \
-	proj4-dev \
-	postgresql-dev \
+    linux-headers \
+    mailcap \
+    musl-dev \
+    proj4-dev \
+    postgresql-dev \
     zlib-dev && \
-	rm -rf /var/cache/apk/*
+    rm -rf /var/cache/apk/*
 RUN ln -s /usr/lib/libgeos_c.so.1 /usr/local/lib/libgeos_c.so
 RUN ln -s /usr/lib/libgdal.so.20.1.0 /usr/local/lib/libgdal.so
 RUN pip install --upgrade pip
