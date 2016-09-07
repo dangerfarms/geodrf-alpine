@@ -15,6 +15,7 @@ RUN apk add --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/
     mailcap \
     musl-dev \
     proj4-dev \
+    postgresql-client \
     postgresql-dev \
     zlib-dev && \
     rm -rf /var/cache/apk/*
