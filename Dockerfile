@@ -1,6 +1,7 @@
 # This image provides containers that can connect to a postGIS database instance.
 FROM python:3-alpine
 ENV CFLAGS="$CFLAGS -L/lib"
+ENV PYTHONUNBUFFERED 0
 RUN apk add --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
     bash \
     binutils \
