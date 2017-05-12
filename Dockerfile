@@ -2,7 +2,7 @@
 FROM python:3.5-alpine
 ENV CFLAGS="$CFLAGS -L/lib"
 ENV PYTHONUNBUFFERED 0
-RUN apk add --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
+RUN apk update && apk upgrade && apk add --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
     bash \
     binutils \
     gcc \
