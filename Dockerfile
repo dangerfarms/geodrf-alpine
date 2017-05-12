@@ -24,5 +24,5 @@ RUN apk update && \
      zlib-dev && \
     rm -rf /var/cache/apk/*
 RUN ln -s /usr/lib/libgeos_c.so.1 /usr/local/lib/libgeos_c.so
-RUN ln -s /usr/lib/libgdal.so.20.1.3 /usr/local/lib/libgdal.so
+RUN ln -s /usr/lib/libgdal.so.20.1.3 /usr/lib/libgdal.so
 RUN pip install --upgrade pip
